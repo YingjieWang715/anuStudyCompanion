@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reminder.EditReminderActivity">
+
+    <TextView
+        android:id="@+id/title_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/edit_reminder"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextReminder"
+        app:layout_constraintStart_toEndOf="@id/button_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/title_reminder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title_reminder"
+        app:tint="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/activity_padding"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_reminder" />
+
+    <ImageButton
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_padding_horizontal"
+        android:layout_marginEnd="@dimen/activity_padding_horizontal"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_check"
+        app:layout_constraintBottom_toBottomOf="@id/title_reminder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title_reminder"
+        app:tint="@color/black" />
+
+    <Switch
+        android:id="@+id/switchDate"
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReminder"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchTime"
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchDate"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/date"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReminder" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="60dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReminder" />
+
+    <TextView
+        android:id="@+id/timeDisplay"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/dateDisplay" />
+
+    <TextView
+        android:id="@+id/delete_text_view_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/red_A400"
+        android:textSize="@dimen/text_medium"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

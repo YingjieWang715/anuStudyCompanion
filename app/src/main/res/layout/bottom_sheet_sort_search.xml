@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bkg">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_remove_24"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center|top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/sort_titleBar"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:background="@color/anu_gold_tint_background"
+            android:minHeight="40dp"
+            android:text="@string/sort_by"
+            android:theme="?attr/actionBarTheme" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_closeSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:fabCustomSize="40dp"
+            app:fabSize="auto"
+            app:srcCompat="@drawable/round_close_24" />
+
+
+    </LinearLayout>
+
+
+    <RadioButton
+        android:id="@+id/button_sortby_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title" />
+
+    <RadioButton
+        android:id="@+id/button_sortby_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date" />
+
+
+</LinearLayout>

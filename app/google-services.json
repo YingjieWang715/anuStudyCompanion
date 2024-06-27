@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "470892897219",
+    "project_id": "study-app-c97f9",
+    "storage_bucket": "study-app-c97f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470892897219:android:2edac8b8c70d26f7b31376",
+        "android_client_info": {
+          "package_name": "au.edu.anu.comp6442.group03.studyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBllad6uGfSMGhxtG9XdtOk4rnxxst5VX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

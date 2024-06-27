@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_criteria">
+        <item>Title</item>
+        <item>Date modified</item>
+        <item>Reminder date</item>
+    </string-array>
+</resources>
